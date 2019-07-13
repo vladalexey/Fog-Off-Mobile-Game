@@ -1,0 +1,29 @@
+.body {
+    padding-top: 10em;
+}
+.container-fluid {
+    margin: 5em;
+}
+.mh {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.ml {
+    margin-left: 0.5em;
+}
+.mr {
+    margin-right: 0.5em;
+}
+.container {
+    margin: 2em;
+}
+.button {
+    display: block !important;
+    padding: 2em !important;
+}
+.input {
+    margin-left: 2em;
+}
+.row {
+    padding-block-start: 2em;
+}

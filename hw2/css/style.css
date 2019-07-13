@@ -1,0 +1,82 @@
+.body {
+    padding-top: 10em;
+    margin-top: 10em;
+}
+
+.bg {
+    background:#f49746 url('../img/backgr.jpg') no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.nvbar {
+    padding: 30%;
+    /* background-color: lightslategrey; */
+}
+
+.card {
+    background-color: #4646464f;
+}
+
+.collapse {
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.collapse-text {
+    color: white
+}
+
+.collapse-text:hover {
+    color: lightskyblue
+}
+
+.collapse-text:active {
+    color: antiquewhite;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.table {
+    padding-top: 3em;
+    color: antiquewhite;
+    background-color: rgba(0, 185, 218, 0.701);
+}
+
+.container-fluid {
+    margin: 5em;
+}
+.mh {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.ml {
+    margin-left: 0.5em;
+}
+.mr {
+    margin-right: 0.5em;
+}
+.container {
+    margin: 2em;
+}
+.button {
+    display: block !important;
+    padding: 2em !important;
+}
+.input {
+    margin-left: 2em;
+}
+.row {
+    padding-block-start: 2em;
+}
