@@ -2,8 +2,9 @@ function hide_sub() {
     $(document).ready(function() {
         
         get_weather()
-        $("#navbar").css("padding-top", "10%");
+        // $("#navbar").css("padding-top", "10%");
         $("#submit").hide();
+        $("#search_btn").css("visibility", "hidden");
         $("#ques").html("Wanna change anything?");
         $("#info").show();
     });
@@ -12,6 +13,7 @@ function hide_sub() {
 function hide_info() {
     $(document).ready(function() {
         $("#show").css("visibility", "visible");
+        $("#search_btn").css("visibility", "visible");
         $("#submit").show();
         $("#info").hide();
     });
@@ -24,6 +26,8 @@ function get_weather() {
         var zip = $("#ZIP").val();
         var URL = "https://api.openweathermap.org/data/2.5/forecast?zip=" + zip + "&appid=" + API+"&units=imperial";
         
+        $("#weather").innerHTML = ""
+        
         $.ajax({
             type: "GET",
             url : URL,
@@ -32,10 +36,10 @@ function get_weather() {
             // Show/hide loading 
             beforeSend: function(){
                 $("#spinner").show();
-              },
-              complete: function(){
+            },
+            complete: function(){
                 $("#spinner").hide();
-              },
+            },
 
             // On success, check if code == 200, append result to table
             success : function(msg){
@@ -43,7 +47,6 @@ function get_weather() {
 
                 if (msg.cod == 200) {  
 
-                    $("#weather").innerHTML = ""
                     var city = msg.name;
                     var temps = msg.list;
                     console.log(temps)

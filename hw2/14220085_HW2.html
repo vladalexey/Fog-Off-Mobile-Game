@@ -11,15 +11,17 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
         
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title> Weather Forecasting </title>
     </head>
 
     <body class="bg">
         
-        <div id="navbar" class="text-center nvbar">
+        <div class="text-center">
 
                 <!-- BIG TITLE -->
-                <div class="centered">
+                <div class="centered" style="margin-top: 5em">
                     <h1 style="color: ghostwhite">Weather Forecasting</h1>
                     <br>
                 </div>
@@ -29,74 +31,82 @@
 
                     <!-- START OF COLLAPSE 1 -->
                     <!-- FILLING IN REQUIRED INFORMATION -->
-                    <div class="panel panel-default">
-                        <div id="info" class="panel-heading">
-                            <h4 class="panel-title">
-                            <a id="ques" class="collapse-text" onclick="hide_info()" data-toggle="collapse" href="#collapse1" style="text-decoration:none">
-                            Need to know what's the weather will be like?</a>
-                            </h4>
-                        </div>
+                    <div class="nvbar">
+                        <div class="panel panel-default ">
+                            <div id="info" class="panel-heading">
+                                <h4 class="panel-title">
+                                <a id="ques" class="collapse-text" onclick="hide_info()" data-toggle="collapse" href="#collapse1" style="text-decoration:none">
+                                Need to know what's the weather will be like?</a>
+                                </h4>
+                            </div>
 
-                        <!-- INPUT FORM -->
-                        <div id="collapse1" class="panel-collapse collapse in" data-parent="#accordion">
-                            <div class="panel-body">
-                                <span class="rounded-lg">
-                                    <div class="card">
-                                        <div class="row">
-                                            <div class="col-2"></div>
-                                            <div class="col-8">
-                            
-                                                <p style="color:ghostwhite"><b>Information</b></p>
-                                                
-                                                <!-- Input form  -->
-                                                <div class="form-group">
-                                                    <p class="" style="text-align: left; color:ghostwhite">API Key</p>
-                                                    <input type="text" class="form-control ml" id="API">
-                                                    <br>
-                                                    <p style="text-align: left; color:ghostwhite">ZIP Code</p>
-                                                    <input type="text" class="form-control ml" id="ZIP">
-                                                    <p><br></p>
+                            <!-- INPUT FORM -->
+                            <div id="collapse1" class="panel-collapse collapse in" data-parent="#accordion">
+                                <div class="panel-body">
+                                    <span class="rounded-lg">
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-2"></div>
+                                                <div class="col-8">
+                                
+                                                    <p style="color:ghostwhite"><b>Information</b></p>
+                                                    
+                                                    <!-- Input form  -->
+                                                    <div class="form-group">
+                                                        <!-- b2c237b01377f5f46a5093d285c61a93 -->
+                                                        <p class="" style="text-align: left; color:ghostwhite">API Key</p>
+                                                        <input type="text" class="form-control ml" id="API">
+                                                        <br>
+                                                        <p style="text-align: left; color:ghostwhite">ZIP Code</p>
+                                                        <input type="text" class="form-control ml" id="ZIP">
+                                                        <p><br></p>
+                                                    </div>
                                                 </div>
+                                                <div class="col-2"></div>
                                             </div>
-                                            <div class="col-2"></div>
                                         </div>
-                                    </div>
-                                </span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
                     <br> <br>
                     <!-- START OF COLLAPSE 2 -->
-                    <div class="panel panel-default">
-                        <div id="submit" class="panel-heading">
+                    <div class="panel panel-default ">
+                        <div id="submit" class="panel-heading text-center">
                             <h4 class="panel-title">
-                            <a id="show" class="collapse-text btn btn-info" onclick="hide_sub()" data-toggle="collapse"  href="#collapse2" style="text-decoration:none; visibility: hidden;">
-                            Show me!</a>
+                            <div id="show" class="collapse-text" style="display: inline-block;" onclick="hide_sub()" data-toggle="collapse"  href="#collapse2" style="text-decoration:none; visibility: hidden;">
+                                <button id="search_btn" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-search" style="visibility: hidden;"></button>
+                            </div>
                             </h4>
                         </div>
 
                         <!-- SHOW/HIDE TABLE OF FORECAST -->
                         <div id="collapse2" class="panel-collapse collapse" data-parent="#accordion">
                             <div class="panel-body">
-                                <br> <br>
-                                <div id="spinner" class="spinner-border text-info text-center"></div>
-                                <!-- Table of Forecast generated -->
-                                <div class="table-wrapper-scroll-y my-custom-scrollbar" id="coll">
-                                    
+                                <div class="container-nomargin">
+                                    <br> <br>
+                                    <div id="spinner" class="spinner-border text-info text-center"></div>
+                                    <!-- Table of Forecast generated -->
+                                    <div class="table-wrapper-scroll-y my-custom-scrollbar" id="coll">
+                                        
+                                        <!-- <div class="table-responsive"> -->
+                                            <table id="weather_table" class="table table-borderless">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <td><b>Date and Time</b></td>
+                                                        <td><b>Description</b></td>
+                                                        <td><b>Lower Temp</b></td>
+                                                        <td><b>Upper Temp</b></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="weather">
+                                                </tbody>
+                                            </table>
+                                        <!-- </div> -->
+                                    </div>
 
-                                    <table id="weather_table" class="table table-borderless">
-                                        <thead class="thead-light">
-                                            <tr>
-                                                <td><b>Date and Time</b></td>
-                                                <td><b>Description</b></td>
-                                                <td><b>Lower Temp</b></td>
-                                                <td><b>Upper Temp</b></td>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="weather">
-                                        </tbody>
-                                    </table>
                                 </div>
 
                             </div>
