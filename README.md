@@ -1,4 +1,4 @@
-**FOG OFF**
+**------------------------------------------------------FOG OFF----------------------------------------------------------**
 
 *A project application for CS 275 class in **Web App Development** with collaboration of 3 other team members in a 4-weeks time period*
 
