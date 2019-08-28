@@ -22,10 +22,10 @@
 
 **Some sample images**
 
-<img src="./fogoff/fog-off/src/sample/1.png">
-<img src="./fogoff/fog-off/src/sample/2.png">
-<img src="./fogoff/fog-off/src/sample/3.png">
-<img src="./fogoff/fog-off/src/sample/4.png">
-<img src="./fogoff/fog-off/src/sample/5.png">
-<img src="./fogoff/fog-off/src/sample/6.png">
-<img src="./fogoff/fog-off/src/sample/7.png">
+<img width="400" src="./fogoff/fog-off/src/sample/1.png">
+<img width="400" src="./fogoff/fog-off/src/sample/2.png">
+<img width="400" src="./fogoff/fog-off/src/sample/3.png">
+<img width="400" src="./fogoff/fog-off/src/sample/4.png">
+<img width="400" src="./fogoff/fog-off/src/sample/5.png">
+<img width="400" src="./fogoff/fog-off/src/sample/6.png">
+<img width="400" src="./fogoff/fog-off/src/sample/7.png">
