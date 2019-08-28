@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- PREVENT STORING CACHE FOR IMPLEMENTING PURPOSESs -->
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+        <!-- import stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> Math Playground </title>
+    </head>
+
+    <body class="bg overlay">
+
+        <div class="header" data-role="header" data-position="fixed"> Made by Quan Phan</div>
+        
+        <div class="text-center d-flex align-items-center div-top">
+
+                <!-- BIG TITLE -->
+                <div class="centered mh mt pt">
+                    <div class="card" style="background-color: rgba(0, 69, 70, 0.651)">
+                        <h1 style="color: white">Academic Report</h1>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container container-nomargin" style="width: 100%; ">
+                    <h3 class="margin-1" style="color: white; "> <b>Your choices:</b> </h3>
+                </div>
+
+                <!-- START OF ACCORDION -->
+                <div class="panel-group" id="accordion">
+
+                    <!-- START OF COLLAPSE 1 -->
+                    <!-- FILLING IN REQUIRED INFORMATION -->
+                    <div class="items-center">
+                        <div class="panel panel-default ">
+                            <div id="info" class="panel-heading">
+                                <h4 class="panel-title">
+                                <a id="ques" class="collapse-text"  data-toggle="collapse" href="#collapse1" style="background-color: rgba(82, 0, 45, 0.53); text-decoration:none">
+                                    <div class="btn btn-primary mt"> Lookup Table </div>
+                                </a>
+                                </h4>
+                            </div>
+
+                            <!-- INPUT FORM -->
+                            <div id="collapse1" class="panel-collapse collapse in" data-parent="#accordion" >
+                                <div class="panel-body">
+                                    <span class="rounded-lg">
+
+                                        <div class="row">
+                                            <div class="col-2"></div>
+                                            <div class="col-8">
+
+                                                <button id="search_btn_1" onclick="requestStudentTab()" class="ui-btn ui-corner-all" style="display: inline-block;">Student</button>
+                                                <button id="search_btn_2" onclick="requestGradeTab()" class="ui-btn ui-corner-all" style="display: inline-block;">Grade</button>
+                                                <button id="search_btn_3" onclick="requestCourseTab()" class="ui-btn ui-corner-all" style="display: inline-block;">Course</button>
+
+                                            </div>
+                                            <div class="col-2"></div>
+                                        </div>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- START OF COLLAPSE 2 -->
+                    <!-- FILLING IN REQUIRED INFORMATION -->
+
+                    <div class="items-center ">
+                        <div class="panel panel-default ">
+                            <div id="info" class="panel-heading">
+                                <h4 class="panel-title">
+                                <a id="ques" class="collapse-text"  data-toggle="collapse" href="#collapse2" style="text-decoration:none; color: black;">
+                                    <div class="btn btn-primary mt" onclick="getListStudent()" > Student Search </div>
+                                </a>
+                                </h4>
+                            </div>
+
+                            <!-- INPUT FORM -->
+                            <div id="collapse2" class="panel-collapse collapse in" data-parent="#accordion">
+                                <div class="panel-body">
+                                    <span class="rounded-lg">
+                                        <div class="row">
+                                            <div class="col-2"></div>
+                                            <div class="col-8">
+
+                                                <form id="selection_stu">
+                                                    <select id="id" class="custom-select">
+                                                        <option value="3" selected>Henry</option>
+                                                        <option value="1">Evie</option>
+                                                        <option value="2">Tom</option>
+                                                        <option value="4">Neil</option>
+                                                    </select>
+                                                </form>
+
+                                                <form id="selection_term">
+                                                        <select id="term" class="custom-select">
+                                                            <option value="3" selected>FALL 19</option>
+                                                            <option value="1">WINTER 20</option>
+                                                            <option value="2">SUMMER 21</option>
+                                                            <option value="4">FALL 18</option>
+                                                        </select>
+                                                    </form>
+
+                                                <button id="search_btn_2" onclick="requestSingle()" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-search" style="display: inline-block;"></button>
+                                                
+                                                <!-- Input form  -->
+                                                <!-- <div class="form-group">
+                                                    <input type="text" class="form-control" id="num_sum">
+                                                    <p><br></p>
+                                                    <button id="search_btn_2" onclick="requestSum()" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-search" style="display: inline-block;"></button>
+                                                </div> -->
+                                                
+                                            </div>
+                                            <div class="col-2"></div>
+                                        </div>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- START OF COLLAPSE 3 -->
+                    <!-- FILLING IN REQUIRED INFORMATION -->
+
+                    <div class="items-center ">
+                        <div class="panel panel-default ">
+                            <div id="info" class="panel-heading">
+                                <h4 class="panel-title">
+                                <a id="ques" class="collapse-text"  data-toggle="collapse" href="#collapse3" style="text-decoration:none; color: black;">
+                                    <div class="btn btn-primary mt"> Add Student </div>
+                                </a>
+                                </h4>
+                            </div>
+
+                            <!-- INPUT FORM -->
+                            <div id="collapse3" class="panel-collapse collapse in" data-parent="#accordion">
+                                <div class="panel-body">
+                                    <span class="rounded-lg">
+                                        <div class="row">
+                                            <div class="col-2"></div>
+                                            <div class="col-8">
+
+                                                <form id="selection">
+                                                    <label for="email" class="mr-sm-2">Firstname:</label>
+                                                    <input type="text" class="form-control mb-2 mr-sm-2" id="first">
+                                                    <label for="pwd" class="mr-sm-2">Lastname:</label>
+                                                    <input type="text" class="form-control mb-2 mr-sm-2" id="last">
+                                                    <label for="email" class="mr-sm-2">Birthdate (YYYY-MM-DD):</label>
+                                                    <input type="text" class="form-control mb-2 mr-sm-2" id="birthdate">
+                                                    <label for="pwd" class="mr-sm-2">Major:</label>
+                                                    <input type="text" class="form-control mb-2 mr-sm-2" id="major">
+
+                                                    <!-- <button type="submit" class="btn btn-primary mb-2">Submit</button> -->
+                                                </form>
+
+                                                <button id="search_btn_2" onclick="addStudent()" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-search" style="display: inline-block;"></button>
+                                                
+                                            </div>
+                                            <div class="col-2"></div>
+                                        </div>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- START OF COLLAPSE 4 -->
+                    <!-- FILLING IN REQUIRED INFORMATION -->
+
+                    <div class="items-center ">
+                            <div class="panel panel-default ">
+                                <div id="info" class="panel-heading">
+                                    <h4 class="panel-title">
+                                    <a id="ques" class="collapse-text" data-toggle="collapse" href="#collapse4" style="text-decoration:none">
+                                    </a>
+                                    </h4>
+                                </div>
+    
+                                <!-- INPUT FORM -->
+                                <div id="collapse4" class="panel-collapse collapse in" data-parent="#accordion">
+                                    <div class="panel-body">
+                                        <h5 style="color: white">The result is</h5>
+                                        <span class="rounded-lg">
+
+                                            <table id="result_table" class="table">
+                                            </table>
+
+                                            <!-- <div class="card">           
+                                                <h3 id="result" class="items-center"></h3>
+                                            </div> -->
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF ACCORDION -->
+
+        </div>
+
+        <!-- Import necessary javascript frameworks and API function -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async></script>
+        <script src="/public/js/studentTab.js" async></script>
+        <script src="/public/js/gradeTab.js" async></script>
+        <script src="/public/js/courseTab.js" async></script>
+        <script src="/public/js/searchSingle.js" async></script>
+        <!-- <script src="/server.js" async></script> -->
+    </body>
+    <footer class="footer">
+            <div data-role="footer" data-position="fixed"> Math Playground</div>
+    </footer>
+</html>
