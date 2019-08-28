@@ -1,0 +1,19 @@
+ion-app .nav-decor {
+    background-color: transparent !important;
+  }
+
+
+.grid-full {
+  height: 100%;
+}
+
+.row-03 {
+  height: 33.33%
+}
+
+#map > div {
+  pointer-events: none;
+  background-color: transparent;
+  // z-index: 1;
+  opacity: 0.5;
+}

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title> Edit your character</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tab1" (click)="backClick()"
+          [text]="Save"
+          [icon]="ios-arrow-back">
+      </ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid #char id="character" style="height: 100%;">
+    
+        <ion-row>
+          <ion-col id="1" size="4" (click)="onClick($event)">
+              <img id="1" src="/assets/character1.gif" alt="" />
+          </ion-col>
+          <ion-col id="2" size="4" (click)="onClick($event)">
+              <img id="2" src="/assets/character2.gif" alt="" />
+          </ion-col>
+          <ion-col id="3" size="4" (click)="onClick($event)">
+              <img id="3" src="/assets/character3.gif" alt="" />
+          </ion-col>
+        </ion-row>
+          
+        <ion-row>
+          <ion-col id="4" size="4" (click)="onClick($event)">
+              <img id="4" src="/assets/character4.gif" alt="" />
+          </ion-col>
+          <ion-col id="5" size="4" (click)="onClick($event)">
+              <img id="5" src="/assets/character5.gif" alt="" />
+          </ion-col>
+          <ion-col id="6" size="4" (click)="onClick($event)">
+              <img id="6" src="/assets/character6.gif" alt="" />
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col id="7" size="4" (click)="onClick($event)">
+              <img id="7" src="/assets/character7.gif" alt="" />
+          </ion-col>
+          <ion-col id="8" size="4" (click)="onClick($event)">
+              <img id="8" src="/assets/character8.gif" alt="" />
+          </ion-col>
+          <ion-col id="9" size="4" (click)="onClick($event)">
+              <img id="9" src="/assets/character9.gif" alt="" />
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+</ion-content>

@@ -1,0 +1,39 @@
+ion-grid {
+    padding: 0 !important;
+    ion-row {
+      padding: 0 !important;
+      ion-col {
+        padding: 0 !important;
+
+        ion-card {
+          padding: 0 !important;
+          ion-card-header {
+            margin-top: 1px !important;
+            margin-bottom: 1px !important;
+          }
+          ion-card-content {
+            margin-inside: 1px !important;
+
+            padding: 0 !important;
+
+            ion-list {
+              margin-inside: 1px !important;
+              padding: 0 !important;
+
+              ion-item {
+                margin-inside: 1px !important;
+                padding: 0 !important;
+
+              }
+
+            }
+
+          }
+        }
+      }
+    }
+  }
+  .welcome-card img {
+    max-height: 20vh;
+    overflow: hidden;
+  }

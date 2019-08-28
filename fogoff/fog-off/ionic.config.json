@@ -1,0 +1,7 @@
+{
+  "name": "Fog Off",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

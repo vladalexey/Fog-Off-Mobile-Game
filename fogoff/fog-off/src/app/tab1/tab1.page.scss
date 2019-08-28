@@ -1,0 +1,28 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+.ion-content {
+  --ion-background-color: #111D12
+}
+
+.fs1 {
+  font-size: 1em;
+}
+
+.fs2 {
+  font-size: 2em;
+}
+
+.p05 {
+  padding: 0.5em;
+}
+
+.custom-avaModal {
+  // background-color: rgb(87, 87, 87) !important;
+  > div {
+    background: rgb(87, 87, 87)  !important;
+    color: rgb(255, 255, 255) !important;
+  }
+}
