@@ -1,6 +1,6 @@
 **FOG OFF**
 
-*A project application for CS 275 class in **Web App Development** with collaboration of 3 other team members*
+*A project application for CS 275 class in **Web App Development** with collaboration of 3 other team members in a 4-weeks time period*
 
 *Link: https://github.com/minxmin99/CS275-Final-Project* (same source code)
 
