@@ -1,10 +1,10 @@
-**FOG OFF**
+**------------------------------------------------------FOG OFF----------------------------------------------------------**
 
-*A project application for CS 275 class in **Web App Development** with collaboration of 3 other team members*
+*A project application for CS 275 class in **Web App Development** with collaboration of 3 other team members in a 4-weeks time period*
 
 *Link: https://github.com/minxmin99/CS275-Final-Project* (same source code)
 
-***Summary***: **Fog Off** is a mobile game developed in **Ionic Framework 4** with TypeScript in **Angular 7.2** that incorporates the **Fog Of War** into real world map and scenarios with **GoogleMaps API.**
+***Summary***: **Fog Off** is a mobile game developed in **Ionic Framework 4** with TypeScript in **Angular 7.2** that incorporates the **Fog Of War** into real world map and scenarios with user location tracking using **GoogleMaps API.**
 
 **Frameworks/Technologies utilized:**
 - **Ionic Framework 4**
@@ -22,10 +22,10 @@
 
 **Some sample images**
 
-<img width="400" src="./sample/1.png">
-<img width="400" src="./sample/2.png">
-<img width="400" src="./sample/3.png">
-<img width="400" src="./sample/4.png">
-<img width="400" src="./sample/5.png">
-<img width="400" src="./sample/6.png">
-<img width="400" src="./sample/7.png">
+<img width="400" src="./fogoff/login.gif">
+<img width="400" src="./fogoff/modify.gif">
+<img width="400" src="./fogoff/map.gif">
+<!-- <img width="400" src="./fogoff/fog-off/src/sample/4.png">
+<img width="400" src="./fogoff/fog-off/src/sample/5.png">
+<img width="400" src="./fogoff/fog-off/src/sample/6.png">
+<img width="400" src="./fogoff/fog-off/src/sample/7.png"> -->
