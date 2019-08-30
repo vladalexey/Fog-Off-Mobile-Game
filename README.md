@@ -2,7 +2,7 @@
 
 *A project application for CS 275 class in **Web App Development** with collaboration of 3 other team members in a 4-weeks time period*
 
-*Link: https://github.com/minxmin99/CS275-Final-Project* (same source code)
+*Link: https://github.com/minxmin99/CS275-Final-Project* (private source code)
 
 ***Summary***: **Fog Off** is a mobile game developed in **Ionic Framework 4** with TypeScript in **Angular 7.2** that incorporates the **Fog Of War** into real world map and scenarios with user location tracking using **GoogleMaps API.**
 
