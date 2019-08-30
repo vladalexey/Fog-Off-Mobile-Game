@@ -22,10 +22,10 @@
 
 **Some sample images**
 
-<img src="./sample/1.png">
-<img src="./sample/2.png">
-<img src="./sample/3.png">
-<img src="./sample/4.png">
-<img src="./sample/5.png">
-<img src="./sample/6.png">
-<img src="./sample/7.png">
+<img width="400" src="./sample/1.png">
+<img width="400" src="./sample/2.png">
+<img width="400" src="./sample/3.png">
+<img width="400" src="./sample/4.png">
+<img width="400" src="./sample/5.png">
+<img width="400" src="./sample/6.png">
+<img width="400" src="./sample/7.png">
