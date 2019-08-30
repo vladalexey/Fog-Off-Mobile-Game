@@ -13,6 +13,7 @@
 - **SQLite** for User database management
 - **NodeJS** and **Express** for Authentication/Host Server
 
+**To test**: Start server on express-auth-demo with npm start to listen to localhost and start emulator
 
 **Testing**: 
 - Tested on iPhone XR iOS 12.2 simulator and iPhone 8 iOS 12.1, Android Emulator on Android 8.0.0 SDK 28 
